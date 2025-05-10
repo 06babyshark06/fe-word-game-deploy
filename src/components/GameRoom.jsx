@@ -73,7 +73,7 @@ export default function GameRoom() {
       socket.off("approveJoin");
       socket.off("chatMessage");
     };
-  }, []);
+  });
 
   const sendMessage = () => {
     socket.emit("chatMessage", { username: playerName, message: msg, roomId: currentRoomId });
