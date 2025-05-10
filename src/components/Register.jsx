@@ -14,10 +14,14 @@ const Register = () => {
   const handleRegister = async() => {
     if (username && email && password && confirmPassword) {
       if (password === confirmPassword) {
-        alert(`Đăng ký thành công với Tên tài khoản: ${username}, Email: ${email}`);
+        try {
         const res = await axiosAuth.post('/api/auth/register', { username, email, password });
-        if (res.status === 200) localStorage.setItem('accessToken', res.data.accessToken);
-        else alert(res.data.message);
+        localStorage.setItem('accessToken', res.data.accessToken);
+        alert(`Đăng ký thành công với Tên tài khoản: ${username}, Email: ${email}`);
+        } catch (error) {
+          console.log(error);
+          alert('Tên tài khoản hoặc email đăng ký đã tồn tại');
+        }
         navigate('/lobby');
       } else {
         alert('Mật khẩu và Nhập lại mật khẩu không khớp!');
