@@ -1,0 +1,145 @@
+/* body {
+  background: linear-gradient(to bottom, #87CEEB, #4682B4);
+  font-family: 'Comic Sans MS', sans-serif;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+} */
+ html, body {
+  overflow: hidden;
+}
+
+.palm-leaves-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: url('https://www.skribbl.io/res/palm_leaves_left.png') no-repeat top left;
+  background-size: contain;
+  opacity: 0.8;
+}
+.palm-leaves-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url('https://www.skribbl.io/res/palm_leaves_right.png') no-repeat top right;
+  background-size: contain;
+  opacity: 0.8;
+}
+.bokeh {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  filter: blur(50px);
+}
+.skribbl-logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  margin-bottom: 20px;
+}
+.login-container {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+.form-header {
+  background-color: #2a406e;
+  border: 2px solid #000;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.form-group label {
+  width: 120px;
+  text-align: right;
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+.form-group input {
+  width: 250px;
+  padding: 0.75rem;
+  text-align: left;
+  border: 2px solid #000;
+  border-radius: 0.25rem;
+  background: #fff;
+  color: #000;
+}
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.button-group button {
+  width: 150px;
+  padding: 0.75rem;
+  border: 2px solid #000;
+  border-radius: 0.25rem;
+  font-size: 1.125rem;
+  transition: background-color 0.3s;
+}
+.button-group .login-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+.button-group .login-btn:hover {
+  background-color: #218838;
+}
+.button-group .register-btn {
+  background-color: #fff;
+  color: #000;
+}
+.button-group .register-btn:hover {
+  background-color: #e2e8f0;
+}
+.confirm-btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.confirm-btn, .back-btn {
+  width: 150px;
+  padding: 0.75rem;
+  border: 2px solid #000;
+  border-radius: 0.25rem;
+  font-size: 1.125rem;
+  transition: background-color 0.3s;
+}
+.confirm-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+.confirm-btn:hover {
+  background-color: #218838;
+}
+.back-btn {
+  background-color: #fff;
+  color: #000;
+}
+.back-btn:hover {
+  background-color: #e2e8f0;
+}
