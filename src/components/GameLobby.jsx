@@ -60,7 +60,7 @@ export default function GameLobby() {
       socket.off("noRoomAvailable", noRoomAvailable);
       // socket.off("approveJoin")
     };
-  }, []);
+  });
 
   const handlePlay = async () => {
     if (name) {
