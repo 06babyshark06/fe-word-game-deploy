@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import useStore from "../store";
 import "../styles/room.css";
 import socket from "../utils/socket";
